@@ -21,13 +21,11 @@ module "bootstrap" {
 
   stages = {
     nonlive = {
-      domain = "myproject.dev"
-      # or to suffix nonlive subdomains with '-dev.myproject.com'
-      # domain = "myproject.com"
-      # subdomain_suffix = "dev"
+      domain = "futz.dev"
+      subdomain_suffix = "dev"
     }
     live = {
-      domain = "myproject.com"
+      domain = "futz.dev"
     }
   }
 }

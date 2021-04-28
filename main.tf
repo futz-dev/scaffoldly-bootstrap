@@ -28,4 +28,10 @@ module "bootstrap" {
       domain = "futz.dev"
     }
   }
+  
+  public_websites = {
+    angular = {
+      template = "scaffoldly/web-angular-template"
+    }
+  }
 }

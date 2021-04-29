@@ -17,7 +17,7 @@ module "bootstrap" {
   github_token = var.BOOTSTRAP_GITHUB_TOKEN
   organization = var.BOOTSTRAP_ORGANIZATION
 
-  auth_service = true
+  auth_service = false
 
   stages = {
     nonlive = {

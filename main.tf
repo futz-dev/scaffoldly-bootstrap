@@ -34,4 +34,10 @@ module "bootstrap" {
       template = "scaffoldly/web-angular-template"
     }
   }
+  
+  serverless_apis = {
+    example = {
+      template = "scaffoldly/sls-rest-api-template"
+    }
+  }
 }

@@ -11,7 +11,7 @@ terraform {
 
 module "bootstrap" {
   source  = "scaffoldly/bootstrap/scaffoldly"
-  version = "0.15.22-2"
+  version = "0.15.23-0"
 
   root_email   = var.ROOT_EMAIL
   github_token = var.BOOTSTRAP_GITHUB_TOKEN

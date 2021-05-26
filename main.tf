@@ -42,8 +42,5 @@ module "bootstrap" {
     example = {
       template = "scaffoldly/sls-rest-api-template"
     }
-    jokes = {
-      template = "scaffoldly/sls-rest-api-template"
-    }
   }
 }

@@ -36,6 +36,9 @@ module "bootstrap" {
     cdn = {
       template = "scaffoldly/web-cdn-template"
     }
+    cdn2 = {
+      template = "scaffoldly/web-cdn-template"
+    }
   }
   
   serverless_apis = {

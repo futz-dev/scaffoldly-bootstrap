@@ -36,13 +36,13 @@ module "bootstrap" {
     cdn = {
       template = "scaffoldly/web-cdn-template"
     }
+    jwt = {
+      template = "scaffoldly/web-jwt-verifier-template"
+    }
   }
   
   serverless_apis = {
     example = {
-      template = "scaffoldly/sls-rest-api-template"
-    }
-    jimmie2 = {
       template = "scaffoldly/sls-rest-api-template"
     }
   }

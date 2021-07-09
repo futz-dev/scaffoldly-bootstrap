@@ -11,7 +11,7 @@ terraform {
 
 module "bootstrap" {
   source  = "scaffoldly/bootstrap/scaffoldly"
-  version = "0.15.28-3"
+  version = "0.15.27-0"
 
   root_email   = var.ROOT_EMAIL
   github_token = var.BOOTSTRAP_GITHUB_TOKEN
@@ -36,13 +36,13 @@ module "bootstrap" {
     cdn = {
       template = "scaffoldly/web-cdn-template"
     }
+    jwt = {
+      template = "scaffoldly/web-jwt-verifier-template"
+    }
   }
 
   serverless_apis = {
     example = {
-      template = "scaffoldly/sls-rest-api-template"
-    }
-    jokes = {
       template = "scaffoldly/sls-rest-api-template"
     }
   }

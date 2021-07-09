@@ -11,7 +11,7 @@ terraform {
 
 module "bootstrap" {
   source  = "scaffoldly/bootstrap/scaffoldly"
-  version = "0.15.21"
+  version = "0.15.28-3"
 
   root_email   = var.ROOT_EMAIL
   github_token = var.BOOTSTRAP_GITHUB_TOKEN
@@ -21,14 +21,14 @@ module "bootstrap" {
 
   stages = {
     nonlive = {
-      domain = "futz.dev"
+      domain           = "futz.dev"
       subdomain_suffix = "dev"
     }
     live = {
       domain = "futz.dev"
     }
   }
-  
+
   public_websites = {
     angular = {
       template = "scaffoldly/web-angular-template"
@@ -37,7 +37,7 @@ module "bootstrap" {
       template = "scaffoldly/web-cdn-template"
     }
   }
-  
+
   serverless_apis = {
     example = {
       template = "scaffoldly/sls-rest-api-template"
